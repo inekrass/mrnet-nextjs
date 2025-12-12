@@ -20,7 +20,6 @@ export default function Header() {
         <div className="flex items-end gap-8">
           <Logo />
           
-          {/* Desktop Phone */}
           <a
             href="tel:+78006003538"
             className="hidden lg:block text-cyan-400 text-xs uppercase tracking-[0.09em] hover:text-cyan-300 transition-colors"
@@ -29,7 +28,6 @@ export default function Header() {
           </a>
         </div>
 
-        {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-12 text-xs uppercase tracking-[0.09em]">
           {navigation.map((item) => (
             <a
@@ -48,11 +46,9 @@ export default function Header() {
 
 
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="lg:hidden text-white p-2"
-          aria-label="Меню"
         >
           <svg
             className="w-6 h-6"
@@ -72,7 +68,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="lg:hidden bg-black/95 backdrop-blur-sm border-t border-white/10">
           <nav className="max-w-[1440px] mx-auto px-4 py-6 flex flex-col gap-4">

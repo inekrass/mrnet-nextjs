@@ -31,7 +31,6 @@ export default function Features() {
 
   return (
     <section className="max-w-[1440px] mx-auto px-4 md:px-9 py-8 md:py-16">
-      {/* Desktop: Grid with 3 columns */}
       <div className="hidden lg:grid grid-cols-3 gap-6">
         {features.map((feature, index) => (
           <div
@@ -55,7 +54,6 @@ export default function Features() {
         ))}
       </div>
 
-      {/* Mobile/Tablet: Slider */}
       <div className="lg:hidden">
         <div className="overflow-hidden">
           <div 
@@ -87,20 +85,16 @@ export default function Features() {
           </div>
         </div>
 
-        {/* Navigation Controls: Buttons + Dots */}
         <div className="flex items-center justify-between gap-8 mt-8">
-          {/* Previous Button */}
           <button
             onClick={prevSlide}
             className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-cyan-400 flex items-center justify-center hover:bg-cyan-400/10 transition-colors flex-shrink-0"
-            aria-label="Previous slide"
           >
             <svg className="w-6 h-6 md:w-8 md:h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
-          {/* Dots Indicator */}
           <div className="flex gap-3">
             {features.map((_, index) => (
               <button
@@ -113,11 +107,9 @@ export default function Features() {
             ))}
           </div>
 
-          {/* Next Button */}
           <button
             onClick={nextSlide}
             className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-cyan-400 flex items-center justify-center hover:bg-cyan-400/10 transition-colors flex-shrink-0"
-            aria-label="Next slide"
           >
             <svg className="w-6 h-6 md:w-8 md:h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
