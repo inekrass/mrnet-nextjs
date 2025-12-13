@@ -2,10 +2,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="max-w-[1440px] mx-auto px-4 md:px-9 py-8 md:py-16">
+    <section className="max-w-[1440px] mx-auto px-4 md:px-9 pt-1 pb-3">
       <div className="relative rounded-lg overflow-hidden bg-gradient-to-br from-orange-600/20 via-transparent to-transparent flex flex-col xl:flex-row xl:gap-3">
-        
-        {/* Изображение - показывается на всех экранах до xl, первым элементом */}
         <div className="relative w-full h-[270px] md:h-[400px] mb-4 xl:hidden">
           <Image
             src="/images/hero-image-34930b.png"

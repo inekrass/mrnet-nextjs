@@ -30,7 +30,7 @@ export default function Features() {
   };
 
   return (
-    <section className="max-w-[1440px] mx-auto px-4 md:px-9 py-8 md:py-16">
+    <section className="max-w-[1440px] mx-auto px-4 md:px-9 pt-3 pb-4 md:pb-7">
       <div className="hidden lg:grid grid-cols-3 gap-6">
         {features.map((feature, index) => (
           <div
@@ -63,7 +63,7 @@ export default function Features() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="w-full flex-shrink-0 px-2"
+                className="w-full flex-shrink-0"
               >
                 <div className="border border-cyan-400 rounded-lg bg-gradient-to-br from-cyan-400/20 via-transparent to-transparent p-8">
                   <div className="mb-6 h-[60px] flex items-center">

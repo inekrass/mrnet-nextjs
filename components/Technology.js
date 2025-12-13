@@ -3,18 +3,18 @@ import Image from "next/image";
 export default function Technology() {
   return (
     <section className="max-w-[1440px] mx-auto px-9 py-16">
-      <div className="grid grid-cols-2 gap-12 items-center">
-        <div>
+      <div className="flex flex-col xl:flex-row gap-3 xl:items-center">
+        <div className="xl:flex-shrink-0">
           <Image
             src="/images/tech-showcase-179d0e.png"
             alt="Технология mrnet"
             width={793}
             height={308}
-            className="rounded-lg w-full h-auto"
+            className="rounded-lg w-full xl:w-[793px] h-auto"
           />
         </div>
 
-        <div className="relative border border-orange-600 rounded-lg bg-gradient-to-br from-transparent via-orange-600/10 to-orange-600/20 p-8">
+        <div className="relative border border-orange-600 rounded-lg bg-gradient-to-br from-transparent via-orange-600/10 to-orange-600/20 p-8 xl:flex-1">
           <p className="text-2xl leading-[1.25] mb-6">
             Прокачайте свой интернет с высокоскоростными технологиями mrnet. 
             Наш мультироутер суммирует несколько каналов связи в один (технология бондинг), 

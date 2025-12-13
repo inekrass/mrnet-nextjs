@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import Clients from "@/components/Clients";
 import Technology from "@/components/Technology";
 import Monitoring from "@/components/Monitoring";
 import Management from "@/components/Management";
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="pt-[113px]">
         <Hero />
         <Features />
+        <Clients />
         <Technology />
         <Monitoring />
         <Management />
